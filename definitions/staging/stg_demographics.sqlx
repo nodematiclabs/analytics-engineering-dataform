@@ -1,0 +1,15 @@
+config {
+  type: "table"
+}
+
+SELECT
+  CAST(date AS STRING) as date,
+  channel_id,
+  video_id,
+  live_or_on_demand,
+  subscribed_status,
+  country_code,
+  age_group,
+  gender,
+  views_percentage
+FROM ${ref("p_channel_demographics_a1_channel")}

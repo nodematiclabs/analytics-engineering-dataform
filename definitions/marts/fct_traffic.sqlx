@@ -1,0 +1,8 @@
+config {
+  type: "view"
+}
+
+SELECT traffic.*, descriptions.traffic_source_description
+FROM ${ref("stg_traffic")} traffic
+LEFT JOIN ${ref("stg_traffic_descriptions")} descriptions
+ON traffic.traffic_source_type = descriptions.traffic_source_type

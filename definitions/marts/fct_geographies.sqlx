@@ -1,0 +1,26 @@
+config {
+  type: "view",
+  assertions: {
+    nonNull: [
+      "date",
+      "country_code",
+      "views",
+      "watch_time_minutes",
+    ]
+  }
+}
+
+SELECT
+  basic.date as date,
+  basic.country_code as country_code,
+  province.province_code as province_code,
+  IF(basic.country_code="US", province.views, basic.views) as views,
+  IF(basic.country_code="US", province.watch_time_minutes, basic.watch_time_minutes) as watch_time_minutes,
+FROM ${ref("stg_basic")} basic
+LEFT JOIN ${ref("stg_province")} province
+ON
+  basic.date = province.date
+  AND basic.video_id = province.video_id
+  AND basic.live_or_on_demand = province.live_or_on_demand
+  AND basic.subscribed_status = province.subscribed_status
+  AND basic.country_code = province.country_code

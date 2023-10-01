@@ -1,0 +1,13 @@
+config {
+  type: "table",
+  description: "Traffic source descriptions data from https://developers.google.com/youtube/reporting/v1/reports/dimensions#traffic_source_detail",
+  columns: {
+    traffic_source_type: "Unique numeric ID for the traffic source type",
+    traffic_source_description: "Short, plain-text description of the traffic source"
+  }
+}
+
+SELECT
+  traffic_source_type,
+  traffic_source_description
+FROM ${ref("src_traffic_descriptions")}

@@ -1,0 +1,47 @@
+config {
+  type: "view",
+  assertions: {
+    nonNull: [
+      "video_id",
+      "year_week",
+      "views",
+      "subscribed_views",
+      "not_subscribed_views",
+      "comments",
+      "likes",
+      "dislikes",
+      "shares",
+      "subscribers_gained",
+      "subscribers_lost",
+      "red_views",
+      "red_watch_time_minutes",
+      "average_view_duration_percentage",
+      "average_view_duration_seconds"
+    ],
+    rowConditions: [
+      "average_view_duration_percentage > 0",
+      "average_view_duration_percentage < 1",
+    ]
+  }
+}
+
+SELECT
+  video_id,
+  FORMAT_DATE('%Y-%U', PARSE_DATE("%Y%m%d", date)) AS year_week,
+  SUM(views) as views,
+  SUM(IF(subscribed_status="subscribed", views, 0)) as subscribed_views,
+  SUM(IF(subscribed_status="not_subscribed", views, 0)) as not_subscribed_views,
+  SUM(comments) as comments,
+  SUM(likes) as likes,
+  SUM(dislikes) as dislikes,
+  SUM(shares) as shares,
+  SUM(subscribers_gained) as subscribers_gained,
+  SUM(subscribers_lost) as subscribers_lost,
+  SUM(red_views) as red_views,
+  SUM(red_watch_time_minutes) as red_watch_time_minutes,
+  SUM(views*average_view_duration_percentage)/SUM(views) as average_view_duration_percentage,
+  SUM(views*average_view_duration_seconds)/SUM(views) as average_view_duration_seconds
+FROM ${ref("stg_basic")} basic
+WHERE views > 0
+GROUP BY video_id, year_week
+ORDER BY year_week ASC

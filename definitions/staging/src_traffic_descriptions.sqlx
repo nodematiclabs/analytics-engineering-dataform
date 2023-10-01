@@ -1,0 +1,6 @@
+config {
+    type: "declaration",
+    database: "PROJECT",
+    schema: "youtube_analytics",
+    name: "src_traffic_descriptions",
+}

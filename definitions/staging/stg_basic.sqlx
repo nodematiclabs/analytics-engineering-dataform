@@ -1,0 +1,39 @@
+config {
+  type: "table"
+}
+
+SELECT
+  CAST(date AS STRING) as date,
+  channel_id,
+  video_id,
+  live_or_on_demand,
+  subscribed_status,
+  country_code,
+  views,
+  comments,
+  likes,
+  dislikes,
+  shares,
+  watch_time_minutes,
+  average_view_duration_seconds,
+  average_view_duration_percentage,
+  annotation_impressions,
+  annotation_clickable_impressions,
+  annotation_clicks,
+  annotation_click_through_rate,
+  annotation_closable_impressions,
+  annotation_closes,
+  annotation_close_rate,
+  card_teaser_impressions,
+  card_teaser_clicks,
+  card_teaser_click_rate,
+  card_impressions,
+  card_clicks,
+  card_click_rate,
+  subscribers_gained,
+  subscribers_lost,
+  videos_added_to_playlists,
+  videos_removed_from_playlists,
+  red_views,
+  red_watch_time_minutes
+FROM ${ref("p_channel_basic_a2_channel")}

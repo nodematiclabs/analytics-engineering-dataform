@@ -1,0 +1,31 @@
+config {
+  type: "view",
+  assertions: {
+    nonNull: [
+      "country_code",
+      "subscribed_status",
+      "age_group",
+      "gender",
+      "views_percentage",
+    ],
+    rowConditions: [
+      "views_percentage > 0",
+      "views_percentage < 1",
+    ]
+  }
+}
+
+WITH views_percentage_sum AS (
+  SELECT SUM(views_percentage) AS total
+  FROM ${ref("stg_demographics")}
+)
+
+SELECT
+  country_code,
+  subscribed_status,
+  age_group,
+  gender,
+  SUM(views_percentage) / (SELECT total FROM views_percentage_sum) AS views_percentage,
+FROM ${ref("stg_demographics")}
+GROUP BY country_code, subscribed_status, age_group, gender
+ORDER BY views_percentage DESC
