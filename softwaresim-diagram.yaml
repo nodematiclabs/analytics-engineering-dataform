@@ -1,0 +1,894 @@
+mouseWheel:
+  _isScalar: false
+  closed: false
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+elementDraw:
+  _isScalar: false
+  closed: false
+  isStopped: false
+  hasError: false
+  thrownError: null
+  __isAsync: false
+height: 606
+snapSettings:
+  constraints: 16
+serializationSettings:
+  preventDefaults: true
+contextMenuSettings:
+  show: true
+  items:
+    - text: Edit
+      id: edit
+      target: .e-elementcontent
+      iconCss: fa fa-cogs
+    - text: Callout To
+      id: callout
+      target: .e-elementcontent
+      iconCss: fa fa-crosshairs
+    - text: Increase font size ↑
+      id: increaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Decrease font size ↓
+      id: decreaseFontSize
+      target: .e-elementcontent
+      iconCss: fa fa-font
+    - text: Fill
+      id: fill
+      target: .e-elementcontent
+      iconCss: fa fa-tint
+    - text: Highlight
+      id: highlight
+      target: .e-elementcontent
+      iconCss: fa fa-lightbulb-o
+    - text: Collapse to square
+      id: collapseToSquare
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Collapse to circle
+      id: collapseToCircle
+      target: .e-elementcontent
+      iconCss: fa fa-compress
+    - text: Expand
+      id: expand
+      target: .e-elementcontent
+      iconCss: fa fa-expand
+    - text: Bring to front
+      id: front
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-up
+    - text: Bring forward
+      id: forward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-up
+    - text: Send backward
+      id: backward
+      target: .e-elementcontent
+      iconCss: fa fa-angle-down
+    - text: Send to back
+      id: back
+      target: .e-elementcontent
+      iconCss: fa fa-angle-double-down
+    - text: Remove
+      id: remove
+      target: .e-elementcontent
+      iconCss: fa fa-times
+  showCustomMenuOnly: true
+tool: 5
+scrollSettings:
+  scrollLimit: Infinity
+  viewPortWidth: 930
+  viewPortHeight: 606
+  horizontalOffset: -9
+  verticalOffset: -22
+addInfo:
+  stages:
+    - control: prepend
+      class: p-button-secondary
+      icon: pi pi-plus
+    - name: Define
+      id: define
+      progress: 100
+      details: ""
+      delayed: false
+      atRisk: false
+      blocked: false
+      color: "#689F38"
+      dates:
+        - {}
+        - {}
+      datesEnabled: false
+      taskLevelProgress: true
+      tasks:
+        - name: Task 1
+          progress: 100
+        - name: Task 2
+          progress: 100
+    - name: Measure
+      id: measure
+      progress: 0
+      details: ""
+      delayed: true
+      atRisk: true
+      blocked: true
+      color: "#D32F2F"
+      dates:
+        - {}
+        - {}
+      datesEnabled: false
+      taskLevelProgress: false
+      tasks:
+        - name: Task 1
+          progress: 0
+    - name: Anayze
+      id: analyze
+      progress: 0
+      details: ""
+      delayed: false
+      atRisk: false
+      blocked: false
+      color: "#D32F2F"
+      dates:
+        - {}
+        - {}
+      datesEnabled: false
+      taskLevelProgress: false
+      tasks:
+        - name: Task 1
+          progress: 0
+    - name: Improve
+      id: improve
+      progress: 0
+      details: ""
+      delayed: false
+      atRisk: false
+      blocked: false
+      color: "#D32F2F"
+      dates:
+        - {}
+        - {}
+      datesEnabled: false
+      taskLevelProgress: false
+      tasks:
+        - name: Task 1
+          progress: 0
+    - name: Control
+      id: control
+      progress: 0
+      details: ""
+      delayed: false
+      atRisk: false
+      blocked: false
+      color: "#D32F2F"
+      dates:
+        - {}
+        - {}
+      datesEnabled: false
+      taskLevelProgress: false
+      tasks:
+        - name: Task 1
+          progress: 0
+    - control: append
+      class: p-button-secondary
+      icon: pi pi-plus
+  currencyText: USD ($)
+  currencySymbol: $
+  selectedViewType: 0
+  name: Analytics Engineering Concepts
+  author: Nodematic
+  description: <p>Ideas:</p><ol><li>ELT pipelines over ETL</li><li>Take advantage
+    of the technological innovation and scale of modern cloud data
+    warehouses</li><li>Raw data, transformed data, and transformations are all
+    in the data warehouse</li><li>Use source declarations to be most adaptable
+    to source data changes and renames</li><li>Document data and transformations
+    at multiple levels (e.g., table, column, and script)</li><li>Document once
+    (single source of truth), but surface the documentation in all
+    systems</li><li>Keep transformations relatively small and modular, for
+    understandability and agility</li><li>Keep things simple with the DDL vs.
+    DML, and skaffolding/boilerplate for derived data assets</li><li>Use
+    directory structures to cleanly organize transformations</li><li>Use simple,
+    built in assertions for basic, common validations</li><li>Use custom, manual
+    asserts for more complex business logic</li><li>Use dependencies to ensure
+    data is validated before it's used downstream</li></ol>
+  objectives: []
+  experiments: []
+  experimentCols:
+    - field: name
+      header: Name
+connectors:
+  - id: Orthogonal ConnectorbNNiW
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 91
+      y: 227
+    targetPoint:
+      x: 191
+      y: 196
+    sourceID: YouTuben57EN
+    targetID: Data TransferP4M53
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 3
+  - id: Dashed Straight ConnectorCNr35
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 454.35
+      y: 300
+    targetPoint:
+      x: 419.65
+      y: 384
+    addInfo:
+      viewConnector: 0
+    zIndex: 6
+  - id: Dashed Straight Connectorxne1W
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 479.65
+      y: 384
+    targetPoint:
+      x: 514.35
+      y: 300
+    sourceID: BigQueryVK6LP
+    targetID: BigQueryPldvO
+    addInfo:
+      viewConnector: 0
+    zIndex: 7
+  - id: Dashed Straight ConnectorILOgW
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 659
+      y: 351.2
+    targetPoint:
+      x: 596.27
+      y: 300
+    sourceID: dbtmJlRT
+    targetID: BigQueryPldvO
+    addInfo:
+      viewConnector: 0
+    zIndex: 9
+  - id: Dashed Straight ConnectorVsBhi
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 596.27
+      y: 300
+    targetPoint:
+      x: 659
+      y: 351.2
+    sourceID: BigQueryPldvO
+    targetID: dbtmJlRT
+    addInfo:
+      viewConnector: 0
+    zIndex: 11
+  - id: Orthogonal ConnectorV7Dhb
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+    constraints: 470654
+    sourcePoint:
+      x: 341
+      y: 146
+    targetPoint:
+      x: 385
+      y: 250
+    sourceID: Data TransferP4M53
+    targetID: BigQueryPldvO
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 13
+  - id: Dashed Straight ConnectorlTmAB
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    sourcePoint:
+      x: 141
+      y: 277
+    targetPoint:
+      x: 199
+      y: 277
+    sourceID: YouTuben57EN
+    targetID: FiveTrans4UPm
+    addInfo:
+      viewConnector: 0
+    zIndex: 15
+  - id: Dashed Orthogonal ConnectorcTG0f
+    type: Orthogonal
+    targetDecorator:
+      shape: OpenArrow
+    style:
+      strokeWidth: 2
+      strokeDashArray: 2 2
+    constraints: 470654
+    sourcePoint:
+      x: 299
+      y: 277
+    targetPoint:
+      x: 385
+      y: 250
+    sourceID: FiveTrans4UPm
+    targetID: BigQueryPldvO
+    segments:
+      - type: Orthogonal
+    addInfo:
+      viewConnector: 0
+    zIndex: 16
+nodes:
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #160303; border-radius:
+        50%"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1666461541/sds_logos/YouTube_Black_87_emghxt.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1666461540/sds_logos/YouTube_blabey.png);
+        border-radius: 50%"></div></div></div>'
+    id: YouTuben57EN
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: YouTube
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: YouTube
+      status: N/A
+      size: sm
+      nodeType: html
+      title: YouTube
+      editableName: YouTube
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Data Store
+          type: Storage
+          portsIn:
+            put: data
+            get: fetch
+          portsOut:
+            stored: data
+      dynamicsViews:
+        - type: Storage
+          status: Idle
+          name: Data Store
+      name: YouTube
+      category: 7
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1666461540/sds_logos/YouTube_blabey.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1666461540/sds_logos/YouTube__0484848_euwvlc.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1666461541/sds_logos/YouTube_Black_87_emghxt.png
+      color: "#160303"
+      controlText: YouTube
+      selectedDynamicsView: 0
+      collapsedToSquare: false
+      collapsedToCircle: true
+    width: 100
+    height: 100
+    offsetX: 91
+    offsetY: 277
+    zIndex: 1
+    outEdges:
+      - Orthogonal ConnectorbNNiW
+      - Dashed Straight ConnectorlTmAB
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_Black_87_wnczcr.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_qbcoev.png);"></div><div
+        class="c-text"><div class="c-title">BigQuery</div><div
+        class="c-short-description">Analyzing massive datasets in real-time
+        using SQL-like queries (raw & transformed)</div><div
+        class="c-bottom"><div class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: BigQueryPldvO
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: BigQuery
+        shortDescription: Analyzing massive datasets in real-time using SQL-like queries
+          (raw & transformed)
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: BigQuery
+      status: N/A
+      size: sm
+      nodeType: html
+      title: BigQuery
+      editableName: BigQuery
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: BigQuery
+      category: 3
+      imgUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_qbcoev.png
+      imgPrimaryUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery__044448_tx0mzn.png
+      imgBlackUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_Black_87_wnczcr.png
+      color: "#3871e0"
+      controlText: BigQuery
+      selectedDynamicsView: 0
+    width: 300
+    height: 100
+    offsetX: 535
+    offsetY: 250
+    zIndex: 2
+    inEdges:
+      - Dashed Straight Connectorxne1W
+      - Dashed Straight ConnectorILOgW
+      - Orthogonal ConnectorV7Dhb
+      - Dashed Orthogonal ConnectorcTG0f
+    outEdges:
+      - Dashed Straight ConnectorVsBhi
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_Black_87_wnczcr.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_qbcoev.png);"></div><div
+        class="c-text"><div class="c-title">Dataform (part of
+        BigQuery)</div><div class="c-short-description">Transformations of data
+        after loading, using best practices for analytics engineering</div><div
+        class="c-bottom"><div class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: BigQueryVK6LP
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: BigQuery
+        shortDescription: Transformations of data after loading, using best practices
+          for analytics engineering
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: BigQuery
+      status: N/A
+      size: sm
+      nodeType: html
+      title: BigQuery
+      editableName: Dataform (part of BigQuery)
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: BigQuery
+      category: 3
+      imgUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_qbcoev.png
+      imgPrimaryUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery__044448_tx0mzn.png
+      imgBlackUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/bigquery_Black_87_wnczcr.png
+      color: "#3871e0"
+      controlText: BigQuery
+      selectedDynamicsView: 0
+    width: 300
+    height: 100
+    offsetX: 459
+    offsetY: 434
+    zIndex: 4
+    outEdges:
+      - Dashed Straight Connectorxne1W
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #D93615; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1666599293/sds_logos/DBT_Black_87_khqjsd.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1666599293/sds_logos/DBT_jo4myr.png);
+        border-radius: 10px"></div></div></div>'
+    id: dbtmJlRT
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: dbt
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: dbt
+      status: N/A
+      size: sm
+      nodeType: html
+      title: dbt
+      editableName: dbt
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: dbt
+      category: 1
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1666599293/sds_logos/DBT_jo4myr.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1666599293/sds_logos/DBT__0484848_k3not4.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1666599293/sds_logos/DBT_Black_87_khqjsd.png
+      color: "#D93615"
+      controlText: dbt
+      selectedDynamicsView: 0
+      collapsedToSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 100
+    offsetX: 709
+    offsetY: 392
+    zIndex: 8
+    inEdges:
+      - Dashed Straight ConnectorVsBhi
+    outEdges:
+      - Dashed Straight ConnectorILOgW
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #3871e0;"><div
+        class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/data_transfer_Black_87_z6ldv6.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/data_transfer_c8wqua.png);"></div><div
+        class="c-text"><div class="c-title">BigQuery Data Transfer</div><div
+        class="c-short-description">Example extract-load pipelines</div><div
+        class="c-bottom"><div class="c-hr p-mb-1"></div><div
+        class="c-title-bottom">Google Cloud
+        Platform</div></div></div></div></div>'
+    id: Data TransferP4M53
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: Data Transfer
+        shortDescription: Example extract-load pipelines
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: Data Transfer
+      status: N/A
+      size: sm
+      nodeType: html
+      title: Data Transfer
+      editableName: BigQuery Data Transfer
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: Data Transfer
+      category: 3
+      imgUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/data_transfer_c8wqua.png
+      imgPrimaryUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/data_transfer__044448_nfeo8y.png
+      imgBlackUrl: https://storage.googleapis.com/nodematic/sds_logos/GoogleCloud/data_transfer_Black_87_z6ldv6.png
+      color: "#3871e0"
+      controlText: Data Transfer
+      selectedDynamicsView: 0
+    width: 300
+    height: 100
+    offsetX: 191
+    offsetY: 146
+    zIndex: 12
+    inEdges:
+      - Orthogonal ConnectorbNNiW
+    outEdges:
+      - Orthogonal ConnectorV7Dhb
+  - shape:
+      type: HTML
+      content: '<div class="c-html" style="background-color: #2349E5; border-radius:
+        10px"><div class="c-container"><div class="c-image-primary"
+        style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1693985506/sds_logos/Fivetran_Black_87_lkkhuw.png);"></div><div
+        class="c-image-original" style="background-image:
+        url(https://res.cloudinary.com/dwohyn92h/image/upload/v1693985506/sds_logos/Fivetran_ozwgox.png);
+        border-radius: 10px"></div></div></div>'
+    id: FiveTrans4UPm
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+        name: FiveTran
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+        name: FiveTran
+      status: N/A
+      size: sm
+      nodeType: html
+      title: FiveTran
+      editableName: FiveTran
+      type: component
+      id: ""
+      dynamicsViewSettings:
+        - name: Processing Tool
+          type: Processor
+          portsIn:
+            job: input
+          portsOut:
+            job: output
+          serviceTime:
+            exp:
+              lambda: AverageProcessingTime
+      dynamicsViews:
+        - type: Processor
+          status: Idle
+          name: Processing Tool
+          AverageProcessingTime: 1
+      name: FiveTran
+      category: 1
+      imgUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1693985506/sds_logos/Fivetran_ozwgox.png
+      imgPrimaryUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1693985506/sds_logos/Fivetran__044448_w4wwxv.png
+      imgBlackUrl: https://res.cloudinary.com/dwohyn92h/image/upload/v1693985506/sds_logos/Fivetran_Black_87_lkkhuw.png
+      color: "#2349E5"
+      controlText: FiveTran
+      selectedDynamicsView: 0
+      collapsedToSquare: true
+      collapsedToCircle: false
+    width: 100
+    height: 100
+    offsetX: 249
+    offsetY: 277
+    zIndex: 14
+    inEdges:
+      - Dashed Straight ConnectorlTmAB
+    outEdges:
+      - Dashed Orthogonal ConnectorcTG0f
+  - shape:
+      type: Basic
+      cornerRadius: 10
+    id: Logical GroupUFHwx
+    width: 320
+    height: 120
+    previewSize:
+      width: 320
+      height: 120
+    offsetX: 535
+    offsetY: 250
+    style:
+      fill: none
+      strokeColor: "#2A2A2A"
+      strokeDashArray: 4 4
+      strokeWidth: 2
+    annotations:
+      - id: q0BWT
+        content: Lots of Emphasis (in Modern Data Platforms)
+        offset:
+          x: 0
+          y: 0
+        horizontalAlignment: Left
+        verticalAlignment: Bottom
+        style:
+          fill: white
+          fontSize: 14
+          bold: true
+          color: 2A2A2A
+    addInfo:
+      functionView:
+        leadTime: 0
+        leadTimeSeconds: 0
+        processTime: 0
+        processTimeSeconds: 0
+        completeAndAccuratePerc: 0
+        activityRatio: 0
+        viewType: metrics
+      economicView:
+        cpus: 0
+        memory: 0
+        storage: 0
+        networking: 0
+        accelerators: 0
+        other: 0
+        unknown: false
+        viewType: total
+      status: N/A
+      type: annotation
+    zIndex: 0
+selectedItems:
+  selectedObjects:
+    - shape:
+        type: Basic
+        cornerRadius: 10
+      id: Logical GroupUFHwx
+      width: 320
+      height: 120
+      previewSize:
+        width: 320
+        height: 120
+      offsetX: 535
+      offsetY: 250
+      style:
+        fill: none
+        strokeColor: "#2A2A2A"
+        strokeDashArray: 4 4
+        strokeWidth: 2
+      annotations:
+        - id: q0BWT
+          content: Lots of Emphasis (in Modern Data Platforms)
+          offset:
+            x: 0
+            y: 0
+          horizontalAlignment: Left
+          verticalAlignment: Bottom
+          style:
+            fill: white
+            fontSize: 14
+            bold: true
+            color: 2A2A2A
+      addInfo:
+        functionView:
+          leadTime: 0
+          leadTimeSeconds: 0
+          processTime: 0
+          processTimeSeconds: 0
+          completeAndAccuratePerc: 0
+          activityRatio: 0
+          viewType: metrics
+        economicView:
+          cpus: 0
+          memory: 0
+          storage: 0
+          networking: 0
+          accelerators: 0
+          other: 0
+          unknown: false
+          viewType: total
+        status: N/A
+        type: annotation
+      wrapper:
+        actualSize:
+          width: 320
+          height: 120
+        offsetX: 535
+        offsetY: 250
+      zIndex: 0
+  width: 320
+  height: 120
+  offsetX: 535
+  offsetY: 250
