@@ -1,0 +1,13 @@
+-- Province-level engagement is rolled up to the country level
+config {
+    type: "assertion"
+}
+
+SELECT
+  province.country_code as province_code,
+  basic.country_code as basic_code, 
+FROM ${ref("stg_province")} province
+LEFT JOIN ${ref("stg_basic")} basic
+ON basic.country_code = province.country_code
+WHERE
+  basic.country_code IS NULL
